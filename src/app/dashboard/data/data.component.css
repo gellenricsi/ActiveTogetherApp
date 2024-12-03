@@ -1,3 +1,49 @@
 button.active {
     background-color: orange;
 }
+  
+.col-md-10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+td {
+    height: 140px;
+}
+
+.container {
+    margin-top: 10vh;
+}
+
+
+@media (max-width: 600px) {
+
+    .col-12 {
+        width: 100%;
+        height: auto;
+    }
+  
+    .table {
+        width: 100%;
+    }
+
+    td {
+        height: auto;
+    }
+
+    .container {
+        margin-top: 70vh;
+    }
+}
+  
