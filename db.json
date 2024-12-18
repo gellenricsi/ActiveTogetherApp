@@ -159,6 +159,22 @@
       "newsletter": true,
       "courseId": "_iL775a",
       "id": 12
+    },
+    {
+      "name": "Gellén Richárd",
+      "birthdate": "2024-12-18",
+      "email": "ricsi16555@gmail.com",
+      "newsletter": true,
+      "courseId": "_iL775i",
+      "id": 13
+    },
+    {
+      "name": "Gellén Richárd",
+      "birthdate": "2024-12-11",
+      "email": "ricsi16555@gmail.com",
+      "newsletter": false,
+      "courseId": "_iL775i",
+      "id": 14
     }
   ]
 }

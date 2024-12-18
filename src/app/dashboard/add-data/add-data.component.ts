@@ -44,7 +44,7 @@ export class AddDataComponent implements OnInit {
 
   ngOnInit(): void {
     this.registrationForm = this.formbuilder.group({
-      name: ['', Validators.required],
+      name: ['', Validators.required, Validators.minLength(2), Validators.maxLength(40)],
       birthdate: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       newsletter: [false],
@@ -66,6 +66,8 @@ export class AddDataComponent implements OnInit {
       this.backendService.addRegistration(this.registrationForm.value, this.storeService.currentPage);
       this.isSubmitted = true;
       this.registrationForm.reset();
+    }else {
+      alert("The form must be valid!");
     }
   }
 }
