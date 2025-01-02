@@ -44,7 +44,7 @@ export class AddDataComponent implements OnInit {
 
   ngOnInit(): void {
     this.registrationForm = this.formbuilder.group({
-      name: ['', Validators.required, Validators.minLength(2), Validators.maxLength(40)],
+      name: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(40)]],
       birthdate: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       newsletter: [false],
